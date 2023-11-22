@@ -1,3 +1,33 @@
+# About
+
+This code represents a decentralized application (DApp) designed to manage a whitelist of addresses. The DApp facilitates the inclusion of addresses into a designated whitelist, with a cap defined by `maxWhitelistedAddresses`—indicating the maximum number of addresses eligible for whitelisting. Notably, addresses on this whitelist are granted priority in receiving NFTs within a corresponding NFT contract, exempt from any associated fees.
+
+## Key Features:
+
+1. **Whitelist Management:**
+   - The DApp enables the addition of addresses to a whitelist.
+   - The maximum number of whitelistable addresses is governed by `maxWhitelistedAddresses`.
+
+2. **NFT Contract Integration:**
+   - White-listed addresses gain preferential access to mint NFTs from the Crypto Devs collection.
+   - The mint function within the NFT contract verifies the user's whitelist status and the availability of reserved tokens.
+
+## User Benefits:
+
+The Whitelist DApp serves as a mechanism for early supporters to secure a spot on the whitelist, guaranteeing them exclusive rights to mint NFTs from the Crypto Devs collection.
+
+## Minting Process:
+
+The mint function in the NFT contract performs the following checks:
+   - Validates the user's whitelist status.
+   - Verifies the availability of reserved tokens.
+
+Upon meeting these requirements, a new NFT is minted for the user, ensuring a seamless and exclusive experience.
+
+
+
+
+# DApp is made using Next.js
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
